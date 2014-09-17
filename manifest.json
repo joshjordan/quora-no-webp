@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "quora-no-webp",
+  "description": "A simple Chrome plugin that reloads images on Quora without WebP conversion.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "declarativeContent"
+  ],
+
+  "background" : {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_icon": "icon.png",
+    "default_title": "Convert images to non-WebP"
+  }
+}
